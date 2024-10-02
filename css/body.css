@@ -1,0 +1,739 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* For mobile phones: */
+  [class*="col-"] {
+  float: left;
+  padding: 15px;
+  }
+  @media only screen and (max-width: 575px) {
+    /* For tablets: */
+    .col-ss-1 {width: 8.33%;}
+    .col-ss-2 {width: 16.66%;}
+    .col-ss-3 {width: 25%;}
+    .col-ss-4 {width: 33.33%;}
+    .col-ss-5 {width: 41.66%;}
+    .col-ss-6 {width: 50% !important;}
+    .col-ss-7 {width: 58.33%;}
+    .col-ss-8 {width: 66.66%;}
+    .col-ss-9 {width: 75%;}
+    .col-ss-10 {width: 83.33%;}
+    .col-ss-11 {width: 91.66%;}
+    .col-ss-12 {width: 100% !important;}
+  }
+  @media only screen and (max-width: 769px) and (min-width: 575px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50% !important;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100% !important;}
+  }
+
+   @media only screen and (max-width: 992px)  and (min-width: 769px) {
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50% !important;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100% !important;}
+  }
+
+  @media only screen and (min-width: 992px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 1.2;
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+    overflow-x: hidden;
+  }
+  /*##########################   PRELOADER  ########################### */
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it appears on top */ 
+    background-color: #FFDC11;
+}
+
+#preloader img {
+    width: 40%; /* Adjust the size of your preloader image */
+    height: auto;
+}
+
+/* Hides content initially */
+#content {
+    display: none;
+}
+ /*##########################   BACKGROUND SECTION  ########################### */
+  .background-image {
+    position: relative;
+    width: 100%;
+    height: 140vh;
+    background-image: url('https://demo.themefisher.com/educenter-bootstrap/images/banner/banner-1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    margin-top: -7.25%;
+    }
+    .background-image::before {
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: #1a1a37;
+      opacity: .8;
+  }
+  .container {
+    position: absolute;
+    padding: 25% 0% 0% 4%;
+    margin-top: 3%;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 88%; /* Adjust the width as needed */
+    height: 115%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+ /*##########################   SLIDER  ########################### */
+  .slider {
+      position: relative;
+      width: 100%;
+      height: 120%;
+      overflow: hidden;
+  }
+  
+  .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      align-items: left;
+      justify-content: left;
+      color: white;
+  }
+  
+  .content {
+      text-align: left;
+      width: 55%;
+  }
+  
+  .content h1 {
+    font-size: 60px;
+    margin-bottom: 0;
+  }
+  
+  .content p {
+      color: #b5b5b7 ;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 1.9;
+      font-family: "Poppins", sans-serif;
+      margin-bottom: 7%;
+  }
+  
+  .sld-btn {
+      background-color: #ffbc3b;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 15px 40px;
+      border: 0;
+      position: relative;
+      z-index: 1;
+      transition: color 1000ms;
+      overflow: hidden;
+      border-top: 5px solid #ffbc3b;
+      border-bottom: 5px solid #ffbc3b;
+  }
+  
+  .dots {
+      position: absolute;
+      bottom: 20px;
+      left: 3%;
+      transform: translateX(-50%);
+      display: flex;
+  }
+  
+  .dot {
+      height: 11px;
+      width: 11px;
+      margin: 0 5px;
+      background-color: #bbb;
+      display: inline-block;
+      cursor: pointer;
+  }
+  
+  .dot.active {
+      background-color: #ffbc3b;
+  }
+  
+  .prev, .next {
+      position: absolute;
+      top: 93%;
+      transform: translateY(-50%);
+      color: #bbb;
+      font-size: 30px;
+      padding: 16px;
+      cursor: pointer;
+      background-color: transparent;
+      user-select: none;
+      font-weight: lighter;
+  }
+  
+  .prev {
+      right: 70px;
+  }
+  .next {
+      right: 10px;
+  }
+  .prev:hover, .next:hover {
+    color: #ffbc3b;
+}
+/* Common animation settings for all slides */
+.slide .content {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Slide 1 animations */
+.slide:nth-child(1) .content {
+  animation: slide1In 1s forwards, slide1Out 1s 6.5s forwards;
+}
+
+@keyframes slide1In {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slide1Out {
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(100%); opacity: 0; }
+}
+
+/* Slide 2 animations */
+.slide:nth-child(2) .content {
+  animation: slide2In 1s forwards, slide2Out 1s 6.5s forwards;
+}
+
+@keyframes slide2In {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slide2Out {
+  from { transform: translateY(0); opacity: 1; }
+  to { transform: translateY(100%); opacity: 0; }
+}
+
+/* Slide 3 animations */
+.slide:nth-child(3) .content {
+  animation: slide3In 1s forwards, slide3Out 1s 6.5s forwards;
+}
+
+@keyframes slide3In {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slide3Out {
+  from { transform: translateY(0); opacity: 1; }
+  to { transform: translateY(-100%); opacity: 0; }
+}
+
+ /*##########################   BANNER-SECTION  ########################### */
+ .banner{
+  background: #f8f8f8;
+  padding: 0 !important;
+  margin: 0;
+  position: relative;
+ }
+ .banner-img{
+  padding: 0 !important;
+ }
+ .banner-img img{
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+ }
+ .bnr-cards-ctn{
+  padding: 3% 5% 0% 5% ;
+  position: relative;
+  margin-top: -7%;
+  background-color: #f8f8f8;
+}
+ .card{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+ }
+ .rgt-card{
+  margin-left: 14%;
+ }
+ .feature-icon {
+  font-size: 50px;
+  color: #ffbc3b;
+  display: inline-block;
+}
+.card h1{
+  color: #1e1e4b;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.card p{
+  font-weight: 400;
+  color: #5c5c77;
+  font-size: 15px;
+  line-height: 1.9;
+}
+/*##########################   About-Educenter-SECTION  ########################### */
+.abt{
+  margin: 7% 8%;
+}
+.abt-img{
+  background-size: cover;
+  background-position: center ;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+.abt-ctn {
+  padding-top: 0;
+}
+.abt-ctn h1{
+  font-size: 38px;
+  color: #1e1e4b;
+  font-weight: 900;
+  margin-top: 0;
+}
+.abt-ctn p{
+  font-weight: 400;
+  color: #5c5c77;
+  font-size: 15px;
+  line-height: 1.9;
+}
+.abt-btn{
+  color: #ffbc3b;
+  background-color: transparent;
+  border: 1px solid #ffbc3b;
+  font-size: 16px;
+  padding: 15px 40px;
+  font-weight: 500;
+  position: relative;
+}
+/*##########################   OUR-COURSES-SECTION  ########################### */
+.crs{
+  padding: 0% 8% 5% 8%;
+}
+.crs h1{
+  font-size: 38px;
+  color: #1e1e4b;
+  font-weight: 900;
+}
+.crs p{
+  font-weight: 400;
+  color: #5c5c77;
+  font-size: 15px;
+  line-height: 1.9;
+}
+.abv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.abv h1{
+  font-size: 38px;
+  color: #1e1e4b;
+  font-weight: 900;
+  text-align: left;
+  justify-content: left;
+  align-items: left;
+  margin-right: 2%;
+}
+.abv .line{
+  border-top: 1px solid #ededf1;
+  width: 64%;
+}
+.abv button {
+  background-color: transparent;
+  color: #ffbc3b;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 10px 35px;
+  margin-left: 2%;
+  position: relative;
+  z-index: 1;
+  transition: color 1000ms;
+  overflow: hidden;
+  border: 1px solid #ffbc3b;
+}
+.abv button::before {
+position: absolute;
+content: "";
+inset: 0;
+display: inline-block;
+background-color: #ffbc3b !important;
+transform-origin: top;
+transform: scaleY(0);
+z-index: -1;
+transition: transform 1000ms;
+
+}
+.abv button:hover{
+  border-top: 5px solid #ffbc3b;
+  border-bottom: 5px solid #ffbc3b;
+}
+.abv button:hover::before{
+  transform-origin: bottom;
+  transform: scaleY(1);
+}
+.post-card {
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+.post-card img {
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 270px;
+  border: 1px solid #ededf1;
+}
+
+.post-info {
+  padding: 1.25rem;
+  border: 1px solid #ededf1;
+}
+.post-info:hover {
+ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-date {
+  color: #5c5c77;
+  font-size: 0.9rem;
+  margin:  10px 10px 10px 0;
+}
+.post-admin{
+  margin-left: 10px;
+}
+.post-admin:hover{
+  color: #ffbc3b;
+}
+.post-title {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #1a1a37;
+  font-weight: 900;
+}
+.post-title:hover {
+  color: #ffbc3b;
+}
+.post-info p{
+  font-weight: 400;
+  color: #5c5c77;
+  font-size: 15px;
+  line-height: 1.9;
+}
+.post-info button{
+  color: #fff;
+  background-color: #ffbc3b;
+  font-size: 14px;
+  padding: 10px 35px;
+  border: #ffbc3b;
+}
+.btm-crs {
+  text-align: center;
+}
+.btm-crs button{
+  color: #ffbc3b;
+  background-color: transparent;
+  border: 1px solid #ffbc3b;
+  font-size: 14px;
+  padding: 10px 35px;
+  font-weight: 500;
+  position: relative;
+  margin-left: 2%; 
+}
+/*##########################   JOIN-SECTION  ########################### */
+.join{
+  background-color: #ffbc3b;
+  text-align: center;
+  padding: 7% 8% ;
+  color: #fff;
+}
+.join h3{
+  padding: 0;
+  margin-bottom: 0px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+}
+.join h1{
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 900;
+}
+.join button{
+  color: #ffbc3b !important;
+  background-color: #fff;
+  border: 1px solid #fff;
+  font-size: 16px;
+  padding: 15px 40px;
+  font-weight: 500;
+  position: relative;
+}
+/*##########################   SUCCESS-STORIES-SECTION  ########################### */
+.stories{
+  background-image: url('https://demo.themefisher.com/educenter-bootstrap/images/backgrounds/success-story.jpg');
+  padding: 7% 9% ;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.success-video  {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background: #ffbc3b;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  border: #ffbc3b;
+  margin-top: 18%;
+}
+.sucess{
+  background-color: #fff;
+  padding: 3% 5%;
+}
+.sucess h1{
+  font-size: 38px;
+  color: #1e1e4b;
+  font-weight: 900;
+}
+.sucess p{
+  font-weight: 400;
+  color: #5c5c77;
+  font-size: 16px;
+  line-height: 1.9;
+}
+/*##########################   EVENTS-SECTION  ########################### */
+.events{
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 7% 8% ;
+  color: #fff;
+}
+.evt-line{
+  border-top: 1px solid #ededf1;
+  width: 50%;
+}
+.event-card {
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.event-card:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffbc3b;
+  color: white;
+  padding: 10px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.date .day {
+  font-size: 40px;
+  display: block;
+}
+
+.date .month {
+  font-size: 14px;
+  display: block;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.location {
+  font-weight: 400;
+    color: #5c5c77;
+    font-size: 15px;
+    line-height: 1.9;
+}
+.location i{
+    color: #ffbc3b;
+    margin-right: 7px;
+}
+
+.title {
+  font-size: 20px;
+  margin: 10px 0;
+    color: #1e1e4b;
+    font-weight: 900;
+}
+.title:hover {
+  color: #ffbc3b;
+}
+/*##########################   OUR-TEACHERS-SECTION  ########################### */
+.card-content .social-icons {
+ justify-content: left;
+ padding-left:0%  !important;
+ margin-left: 0% !important;
+}
+.card-content h2 {
+  font-size: 20px;
+  margin: 10px 0;
+    color: #1e1e4b;
+    font-weight: 900;
+ }
+ /*##########################   LATEST-NEWS-SECTION  ########################### */
+ .news{
+  padding: 0% 8% 10% 8%;
+ }
+ .location span{
+  margin-left: 10px;
+ }
+ .card-content button{
+  color: #fff;
+  background-color: #ffbc3b;
+  font-size: 14px;
+  padding: 10px 35px;
+  border: #ffbc3b;
+}
+
+ /*#########=============   OTHER-PAGES  =============######### */
+ .oth-pages{
+  display: flex;
+  position: relative;
+ }
+ .oth-pages h1{
+  font-size: 40px;
+  color: #ffbc3b;
+  margin-right: 10px;
+ }
+ .oth-pages h3{
+  font-size: 25px;
+  padding: 0 !important;
+  padding-top: 15px !important;
+ }
+ .oth-pages h3 i{
+  margin-right: 10px;
+  font-size: 20px;
+ }
+ .container p{
+  color: #fff;
+  line-height: 1.9;
+ }
+ .list-styled {
+  padding-left: 25px;
+  list-style-type: none;
+}
+.list-styled li {
+  position: relative;
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: #5c5c77;
+  line-height: 1.2;
+}
+.list-styled li::before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #ffbc3b;
+  left: -25px;
+  top: 5px;
+}
