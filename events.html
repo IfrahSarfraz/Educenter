@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educenter - Education HTML Template</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/@icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@icon/themify-icons@1.0.1-alpha.3/themify-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+<style>
+    .background-image {
+    height: 65vh;
+    }
+    @media only screen and (max-width: 575px) {
+    h1 {
+    font-size: 30px !important;
+    }
+    .container {
+        top: 84% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      .background-image {
+    height: 75vh !important;
+    }
+}
+@media only screen and (max-width: 380px) {
+    .container {
+        top: 90% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      .background-image {
+    height: 78vh !important;
+    }
+}
+@media only screen and (max-width: 335px) {
+    .container {
+        top: 94% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      .background-image {
+    height: 85vh !important;
+    }
+}
+</style>
+</head>
+<body>
+    <!--############################  PRE-LOADER   ################################-->
+    <div id="preloader">
+        <img src="https://demo.themefisher.com/educenter-bootstrap/images/preloader.gif" alt="Loading...">
+    </div>
+<!--############################  HEADER   ################################-->
+<header>
+        <div class="row top-header" style="padding: 0%; position:relative;">
+            <div class="col-ss-12 col-s-12 col-sm-12 col-6 contact">
+                    <a href="#" style="text-decoration: none;"><div class="num"><p>Call +44 300 303 0266</p></div></a>
+                      <div class="social-icons">
+                        <a href="https://web.facebook.com/themefisher/?_rdc=1&_rdr"><i class="ti ti-facebook"></i></a>
+                        <a href="https://x.com/i/flow/login?redirect_after_login=%2Fthemefisher"><i class="ti ti-twitter-alt"></i></a>
+                        <a href="https://github.com/themefisher"><i class="ti ti-github"></i></a>
+                        <a href="https://www.instagram.com/themefisher/"><i class="ti ti-instagram"></i></a>
+                      </div>
+            </div>
+            <div class="col-ss-12 col-s-12 col-sm-12 col-6">
+                <ul class="list-inline">
+                    <li><a href="notice.html">NOTICE</a></li>
+                    <li><a href="research.html">RESEARCH</a></li>
+                    <li><a href="scholarship.html">SCHOLARSHIP</a></li>
+                    <li ><a id="loginBtn">LOGIN </a></li>
+                    <div id="modalOverlay" class="overlay"></div>
+                    <div id="loginModal" class="modal">
+                        <span id="closeModal" class="close">&times;</span>
+                        <h2>Login</h2>
+                        <input type="text" placeholder="Phone">
+                        <input type="text" placeholder="Name">
+                        <input type="password" placeholder="Password">
+                        <button id="submitLogin">LOGIN</button>
+                    </div>
+                    <li><a  id="regBtn">REGISTER</a></li>
+                    <div id="modalOverlayReg" class="overlay"></div>
+                    <div id="loginModalReg" class="modal" style="top: 50%;">
+                        <span id="closeModalReg" class="close">&times;</span>
+                        <h2>Register</h2>
+                        <input type="text" placeholder="Phone">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button id="submitLogin">Register</button>
+                    </div>
+                </ul>    
+            </div>
+        </div>
+<!--############################  MAIN-HEADER   ################################-->
+<div class="row main-header">
+    <div class="rght">
+        <nav class="navbar">
+            <div class="lft">
+                <a href="index.html" style="text-decoration: none;"><img src="https://demo.themefisher.com/educenter-bootstrap/images/logo.png" alt="logo" class="edu-logo"></a>
+            </div>
+        <div class="lnks">
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li class="active"><a href="events.html">EVENTS</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li class="dropdown">
+                <a >PAGES<span class="ti ti-angle-down"></span>
+                </a>
+                <ul class="dropdown-content">
+                    <li><a href="teacher.html">Teacher</a></li>
+                    <li><a href="teacherSignal.html">Teacher Single</a></li>
+                    <li><a href="notice.html">Notice</a></li>
+                    <li><a href="noticeDetails.html">Notice Details</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="scholarship.html">Scholarship</a></li>
+                    <li><a href="courseDetails.html">Course Details</a></li>
+                    <li><a href="eventDetails.html">Event Details</a></li>
+                    <li><a href="blogDetails.html">Blog Details</a></li>
+                    <li class="dropdown2"><a ><span>&#9664</span>  Sub Menu</a>
+                        <ul class="dropdown-content-2">
+                            <li><a> Sub Menu 01</a></li>
+                            <li><a> Sub Menu 02</a></li>
+                            <li><a> Sub Menu 03</a></li>
+                        </ul>                            
+                    </li>
+                </ul>
+            </li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+          <button class="toggle-button" id="toggleButton">&#9776</button>
+        </div>
+        </nav>
+    </div>
+
+</div>
+</header>
+<main>
+<!--############################  BACKGROUND-SECTION   ################################-->
+<div class="background-image"></div>
+<div class="container">
+    <div class="col-ss-12 col-s-12 col-sm-8 col-8">
+    <div class="oth-pages">
+        <a href="index.html" style="text-decoration: none;"><h1>Home</h1></a>
+        <h3><i class="ti ti-angle-right"></i>Upcoming Events</h3>
+    </div>
+    <p>Our courses offer a good compromise between the continuous assessment favoured by some universities and the emphasis placed on final exams by others.</p>
+    </div>
+</div>
+<!--############################  EVENTS-SECTION   ################################-->
+<section style="padding: 7% 8% 10% 8%;">
+    <div class="row">
+        <div class="col-ss-12 col-s-6 col-sm-6 col-4">
+            <div class="event-card">
+                <div class="card-image">
+                    <img src="https://demo.themefisher.com/educenter-bootstrap/images/events/event-1.jpg" alt="Event Image 1">
+                    <div class="date">
+                        <span class="day">18</span>
+                        <span class="month">DECEMBER</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <p class="location"><i class="ti ti-location-pin"></i>Dhanmondi Lake, Dhaka</p>
+                    <a href="eventDetails.html" style="text-decoration: none;"><h3 class="title">Lorem ipsum dolor amet, consectetur adipisicing.</h3></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-ss-12 col-s-6 col-sm-6 col-4">
+            <div class="event-card">
+                <div class="card-image">
+                    <img src="https://demo.themefisher.com/educenter-bootstrap/images/events/event-2.jpg" alt="Event Image 1">
+                    <div class="date">
+                        <span class="day">21</span>
+                        <span class="month">DECEMBER</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <p class="location"><i class="ti ti-location-pin"></i>Dhanmondi Lake, Dhaka</p>
+                    <a href="eventDetails.html" style="text-decoration: none;"><h3 class="title">Lorem ipsum dolor amet, consectetur adipisicing.</h3></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-ss-12 col-s-6 col-sm-6 col-4 ">
+            <div class="event-card">
+                <div class="card-image">
+                    <img src="https://demo.themefisher.com/educenter-bootstrap/images/events/event-3.jpg" alt="Event Image 1">
+                    <div class="date">
+                        <span class="day">23</span>
+                        <span class="month">DECEMBER</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <p class="location"><i class="ti ti-location-pin"></i>Dhanmondi Lake, Dhaka</p>
+                    <a href="eventDetails.html" style="text-decoration: none;"><h3 class="title">Lorem ipsum dolor amet, consectetur adipisicing.</h3></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-ss-12 col-s-6 col-sm-6 col-4">
+            <div class="event-card">
+                <div class="card-image">
+                    <img src="https://demo.themefisher.com/educenter-bootstrap/images/events/event-1.jpg" alt="Event Image 1">
+                    <div class="date">
+                        <span class="day">18</span>
+                        <span class="month">DECEMBER</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <p class="location"><i class="ti ti-location-pin"></i>Dhanmondi Lake, Dhaka</p>
+                    <a href="eventDetails.html" style="text-decoration: none;"><h3 class="title">Lorem ipsum dolor amet, consectetur adipisicing.</h3></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-ss-12 col-s-6 col-sm-6 col-4">
+            <div class="event-card">
+                <div class="card-image">
+                    <img src="https://demo.themefisher.com/educenter-bootstrap/images/events/event-2.jpg" alt="Event Image 1">
+                    <div class="date">
+                        <span class="day">21</span>
+                        <span class="month">DECEMBER</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <p class="location"><i class="ti ti-location-pin"></i>Dhanmondi Lake, Dhaka</p>
+                    <a href="eventDetails.html" style="text-decoration: none;"><h3 class="title">Lorem ipsum dolor amet, consectetur adipisicing.</h3></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-ss-12 col-s-6 col-sm-6 col-4 ">
+            <div class="event-card">
+                <div class="card-image">
+                    <img src="https://demo.themefisher.com/educenter-bootstrap/images/events/event-3.jpg" alt="Event Image 1">
+                    <div class="date">
+                        <span class="day">23</span>
+                        <span class="month">DECEMBER</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <p class="location"><i class="ti ti-location-pin"></i>Dhanmondi Lake, Dhaka</p>
+                    <a href="eventDetails.html" style="text-decoration: none;"><h3 class="title">Lorem ipsum dolor amet, consectetur adipisicing.</h3></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<!--############################  FOOTER   ################################-->
+<footer>
+    <div class="row upr-ftr">
+        <div class="col-ss-12 col-s-4 col-sm-4 col-4"></div>
+        <div class="col-ss-12 col-s-8 col-sm-8 col-8 newsletter">
+            <h3>Subscribe Now</h3>
+            <form  class="form">
+                <input type="email" placeholder="Enter Your Email...">
+                <button type="submit">Join</button>
+            </form>
+        </div>
+    </div>
+    <div class="row mdl-ftr">
+        <div class="col-ss-12 col-s-8 col-sm-8 col-4 footer-section">
+            <img  src="https://demo.themefisher.com/educenter-bootstrap/images/logo.png" alt="logo" >
+            <p>23621 15 Mile Rd #C104, Clinton MI, 48035, New York, USA
+            <br>+1 (2) 345 6789<br>+1 (2) 345 6789
+            <br>contact@yourdomain.com</p>
+        </div>
+        <div class="col-ss-6 col-s-4 col-sm-4 col-2 footer-section">
+            <h3 >COMPANY</h3>
+            <ul>
+              <li><a href="about.html" >About Us</a></li>
+              <li><a href="teacher.html" >Our Teacher</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <div class="col-ss-6 col-s-4 col-sm-4 col-2 footer-section">
+            <h3 >LINKS</h3>
+            <ul>
+              <li><a href="courses.html" >Courses  </a></li>
+              <li><a href="events.html" >Events</a></li>
+              <li><a href="notice.html">Notice</a></li>
+              <li><a href="scholarship.html">Scholarship</a></li>
+            </ul>
+        </div>
+        <div class="col-ss-6 col-s-4 col-sm-4 col-2 footer-section">
+            <h3 >SUPPORT</h3>
+            <ul>
+              <li><a href="https://themefisher.com/blog" >Forums</a></li>
+              <li><a href="https://docs.themefisher.com/" >Documentation</a></li>
+              <li><a href="">Language</a></li>
+              <li><a href="">Release Status</a></li>
+            </ul>
+        </div>
+        <div class="col-ss-6 col-s-4 col-sm-4 col-2 footer-section">
+            <h3 >RECOMMEND</h3>
+            <ul>
+              <li><a href="https://themefisher.com/" >WordPress</a></li>
+              <li><a href="https://themefisher.com/" >LearnPress</a></li>
+              <li><a href="https://themefisher.com/">WooCommerce</a></li>
+              <li><a href="https://themefisher.com/">bbPress</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row btm-ftr">
+        <div class="col-ss-12 col-s-8 col-sm-8 col-6 btm-ftr-p">
+            <p>Copyright © 2024 , designed & developed by<a href="https://themefisher.com/"> Themefisher</a></p>
+        </div>
+        <div class="col-ss-12 col-s-4 col-sm-4 col-6 ftr-social-icons">
+            <a href="https://web.facebook.com/themefisher/?_rdc=1&_rdr"><i class="ti ti-facebook"></i></a>
+            <a href="https://x.com/i/flow/login?redirect_after_login=%2Fthemefisher"><i class="ti ti-twitter-alt"></i></a>
+            <a href="https://github.com/themefisher"><i class="ti ti-github"></i></a>
+            <a href="https://www.instagram.com/themefisher/"><i class="ti ti-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+</body>
+</html>
