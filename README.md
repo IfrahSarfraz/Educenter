@@ -1,33 +1,37 @@
 # Educenter
-Educenter is a modern and responsive educational website template. It is built using HTML, CSS, and JavaScript, and includes a variety of pages such as home, courses, events, blog, contact, and more, making it perfect for educational institutions or online learning platforms.
+Educenter
+Educenter is a modern and responsive educational website template. It is built using HTML, CSS, and JavaScript, and includes various pages such as home, courses, events, blog, contact, and more, making it ideal for educational institutions or online learning platforms.
 
-Features
-Responsive design with a clean, modern layout
-Multiple pages including courses, events, research, and blog
+# Features
+Responsive design with a clean and modern layout
+Navigation bar with a toggle button for smaller screens
 Interactive sections with animations
-Navigation bar with toggle button for smaller screens
-Course details and event information pages
-Contact form for inquiries
-Blog section to share articles and updates
+Course and event details pages
+Blog section for sharing articles
+Contact form for user inquiries
+Testimonial slider
 Notice board for important updates
-Pages
-Home: Overview of the site with featured content.
-About: Detailed information about the organization.
-Courses: Information on available courses with details.
-Events: List of upcoming events and event details.
-Blog: A section for posting articles.
-Research & Scholarship: Pages focused on academic content.
+# Pages
+Home: Overview of the website and featured content.
+About: Detailed information about the institution or service.
+Courses: Information on courses with detailed descriptions.
+Events: Upcoming events with individual event detail pages.
+Blog: Section for posting educational articles.
+Research & Scholarship: Academic-related content.
 Teachers: Information about the teaching staff.
-Notices: Updates and important announcements.
-Usage
-Customize the HTML and CSS files to suit your institution's branding and content needs.
-Update the images and text to match your educational platform.
-Deploy the website to your preferred hosting platform for public access.
-Demo
+Notices: Important updates and announcements.
+# Usage
+Customize the HTML and CSS files to suit your institution's branding and content.
+Replace the default images and content with your own.
+Deploy the website to your preferred hosting service.
+# Demo
 Check out the live demo of the website:
 
 Live Demo
 
+# Video
+Watch a demonstration of the website:
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+Website Video
+# License
+This project is licensed under the MIT License. See the LICENSE file for more details.
