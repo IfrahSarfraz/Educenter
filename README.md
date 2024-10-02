@@ -27,7 +27,7 @@ Deploy the website to your preferred hosting service.
 # Demo
 Check out the live demo of the website:
 
-Live Demo
+( https://ifrahsarfraz.github.io/Educenter/ )
 
 # Video
 Watch a demonstration of the website:
