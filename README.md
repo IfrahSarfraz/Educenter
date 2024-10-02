@@ -30,7 +30,7 @@ Check out the live demo of the website:
 
 # Video
 Watch a demonstration of the website:
-[Website Video]( https://github.com/user-attachments/assets/d7c24520-401a-4237-bf66-d10c9cbe525d)
+[Website Video]( https://github.com/user-attachments/assets/8a7027c5-9276-4d26-b2d8-1d59728e0cd2)
 
 # License
 This project is licensed under the MIT License. See the LICENSE file for more details.
